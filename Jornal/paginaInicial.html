@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+
+ }
+ p{
+    color:#706b6b;
+ }
+
+    header {
+     background: #8FB9C9;
+      color: #333;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0%;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #007BFF;
+    }
+
+    body {
+        background-color: #D5EAF2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding-top: 120px;
+    }
+    
+
+
+    /* ----- SLIDER ----- */
+    .slider {
+      width: 100%;
+      height: 600px;               /* ajuste a altura como quiser */
+      overflow: hidden;
+      position: relative;
+      background: #e6e9ec;    
+    }   
+
+    .slides {
+      display: flex;
+     width: 100%;
+      height: 100%;
+      animation: slide 15s infinite;
+    }
+
+    /* cada imagem ocupa 100% do viewport do slider */
+    .slides img {
+      flex: 0 0 100%;          
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* keyframes para mover o conjunto de slides lateralmente */
+    @keyframes slide {
+  0%   { transform: translateX(0); }
+  16%  { transform: translateX(0); }
+  20%  { transform: translateX(-100%); }
+  36%  { transform: translateX(-100%); }
+  40%  { transform: translateX(-200%); }
+  56%  { transform: translateX(-200%); }
+  60%  { transform: translateX(-300%); }
+  76%  { transform: translateX(-300%); }
+  80%  { transform: translateX(-400%); }
+  96%  { transform: translateX(-400%); }
+  100% { transform: translateX(-500%); }
+}
+    /* melhoria visual (opcional) */
+    .slider::after {
+      content: "";
+      position: absolute;
+      left:0; right:0; bottom:0; height:80px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.15));
+      pointer-events:none;
+    }
+
+    /* medidas responsivas */
+    @media (max-width: 800px) {
+      .slider { height: 360px; }
+    }
+
+    footer {
+      background-color: #8f8f8f;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      width: 100%;
+}
+footer p {
+    margin: 0;
+    
+}
+#rodape{
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.roda{
+    text-align: center;
+}
+
+
+  </style>
+</head>
+
+
+
+<body>
+   <header>
+    <nav>
+   
+
+        <a   href="paginaInicial.html"><div class="logo"><img src="IMG/logoInicial.jpg" width="50" height="50" alt="Logo"></div></a>  
+
+  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: left;  gap: 40px; padding: 20px;">
+
+ </div>
+      <ul class="nav-links">
+        <li><a href="Apresentacoes.html">Apresentações </a></li>
+            <li><a href="Noticias.html">Notícias</a></li>
+        <li><a href="TheNews.html">The News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="slider">
+  <div class="slides">
+    <img src="IMG/home.jpg" alt="Imagem 1">
+    <img src="IMG/img1.jpg" alt="Imagem 2">
+    <img src="IMG/img2.jpg" alt="Imagem 3">
+    <img src="IMG/img3.jpg" alt="Imagem 4">
+    <img src="IMG/img4.jpg" alt="Imagem 5">
+    <img src="IMG/img5.jpg" alt="Imagem 6">
+  </div>
+</div>
+
+<br>
+<br>
+
+<center>
+<h1 >Alpha Imóveis</h1>
+<p>
+<br>
+
+
+<p>A Alpha é uma empresa especializada na comercialização de imóveis de alto padrão, voltada para clientes <br>que buscam exclusividade, conforto e sofisticação. Nosso portfólio reúne residências de luxo, coberturas, mansões e propriedades únicas nas localizações mais prestigiadas do país e do exterior.
+
+Com uma equipe altamente qualificada e um atendimento personalizado, a Alpha oferece uma experiência imobiliária premium, unindo discrição, confiança e excelência em cada negociação.
+Mais do que vender imóveis, entregamos estilo de vida, segurança e elegância para quem valoriza o que há de melhor.
+</p>
+</center>
+<br><br><br>
+
+<center>
+<h1 >Nossas Inovações</h1>
+<br>
+
+
+<p>Na Alpha Imóveis , acreditamos que o futuro do mercado imobiliário está na tecnologia aliada à exclusividade. <br>Por isso, inovamos em cada detalhe para oferecer uma experiência 
+    única aos nossos clientes.<br><br>
+
+Na Alpha, inovação é sinônimo de exclusividade — transformamos tecnologia em elegância e praticidade em arte de viver bem.
+</p>
+<br>
+</center>
+<ul style = color:#706b6b;> 
+ <li> Visitas virtuais em alta definição: explore cada ambiente com tours 360º realistas, sem sair de casa.</li>
+<li> Sustentabilidade e design moderno: valorizamos propriedades que unem arquitetura contemporânea e eficiência energética, sem abrir mão do conforto e do luxo.</li>
+<li> Atendimento personalizado: um consultor exclusivo acompanha cada etapa, garantindo discrição, confiança e excelência.</li>
+</ul> 
+<br><br><br>
+
+
+
+
+</body>
+</html>

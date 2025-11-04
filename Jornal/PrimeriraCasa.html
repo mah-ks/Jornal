@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Casa de prestígio</title>
+  <style>
+    body {
+      font-family: 'Times New Roman';
+  margin: 0;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  background-color: #f8feff;
+    }
+
+    header {
+      background: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links { list-style: none; display: flex; }
+    .nav-links li { margin-left: 20px; }
+    .nav-links a { text-decoration: none; color: #333; font-weight: 600; }
+
+    /* Carrossel básico */
+    .carousel {
+      width: 900px;
+      max-width: 100%;
+      height: 520px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* Botões simples */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    
+    footer {
+      background-color: #8f8f8f;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      width: 100%;
+}
+footer p {
+    margin: 0;
+    
+}
+#rodape{
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.roda{
+    text-align: center;
+}
+
+ #imoveis{
+        display: flex;
+        top: 150px;
+        left: 150px;
+    }
+
+
+    a{
+text-decoration: none; 
+color: #000000;
+ font-family: 'Times New Roman';
+
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><img src="IMG/download (5).png" width="50" alt="Logo"></div>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="Compras.html">🛒</a></li>
+    </ul>
+  </header>
+<main>
+<div class="carousel">
+  <div class="slides" id="slides">
+    <div class="slide"><img src="IMG/Casa 1/casa1areaExterna.jpg" alt="Área externa"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1banheiro.jpg" alt="Banheiro"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1closet.jpg" alt="Closet"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1cozinha.jpg" alt="Cozinha"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1cozinhainterna.jpg" alt="Cozinha interna"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1escada.jpg" alt="Escada"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1escritorio.jpg" alt="Escritório"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1fora.jpg" alt="Fachada"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1quarto.jpg" alt="Quarto"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1sala.jpg" alt="Sala"></div>
+    <div class="slide"><img src="IMG/Casa 1/casa1vinhicula.jpg" alt="Vínicula"></div>
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+</main>
+  <script>
+    let currentIndex = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+
+    function showSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      showSlide(currentIndex);
+    }
+  </script>
+  
+
+  <br>
+  <br>
+  <br>
+
+<aside style="font-family: 'Poppins', sans-serif; color: #333; line-height: 1.6; max-width: 900px; margin: auto; background: #ffffff; padding: 40px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+
+  <h1 style="font-family: 'Playfair Display', serif; color: #2c3e50; font-size: 32px; text-align: center; margin-bottom: 20px;">
+    Casa de prestígio em São Paulo<br>R$21.000.000
+
+
+  </h1>
+
+  <h3 style="color: #0077b6; border-left: 4px solid #0077b6; padding-left: 10px; margin-top: 40px;">Descrição</h3>
+
+  <p>
+    Localizada em uma rua tranquila e arborizada no Alto de Pinheiros, esta residência de três pavimentos leva a assinatura da arquiteta <strong>Simone Mantovani</strong> e apresenta um projeto que valoriza a integração entre os ambientes, com grandes superfícies envidraçadas e iluminação natural.
+    <br><br>
+    O hall social conta com pé-direito duplo e porta pivotante de seis metros, dando acesso ao living integrado à sala de jantar e ao terraço voltado para o jardim com piscina e paisagismo tropical.
+    <br><br>
+    A área externa inclui espaço gourmet com churrasqueira, grelha argentina e equipamentos profissionais. A casa dispõe ainda de sauna, sala de home theater e adega climatizada com capacidade para até 800 garrafas.
+    <br><br>
+    A cozinha é planejada, com marcenaria sob medida e eletrodomésticos importados. No pavimento superior, um escritório é acessado por elevador panorâmico que atende todos os andares, inclusive a garagem.
+    <br><br>
+    São cinco suítes com armários planejados e projeto luminotécnico. A residência conta com sistema de automação para som, iluminação e energia solar.
+  </p>
+
+  <h3 style="color: #0077b6; border-left: 4px solid #0077b6; padding-left: 10px; margin-top: 40px;">Detalhes</h3>
+
+  <ul style="list-style: none; padding: 0; margin-top: 15px;">
+    <li> Possui <strong>5 dormitórios</strong> amplos e <strong>5 banheiros</strong>, oferecendo conforto e praticidade.</li>
+    <li> Área construída de <strong>683 m²</strong> e área externa de <strong>600 m²</strong>.</li>
+    <li> Estilo arquitetônico <strong>moderno</strong> e funcional.</li>
+    <li> Conta com <strong>elevador</strong> e <strong>1 sacada</strong>, proporcionando praticidade e uma bela vista.</li>
+    <li> Inclui <strong>lareira</strong> e <strong>ar-condicionado</strong> em todos os ambientes.</li>
+    <li> Área externa com <strong>piscina</strong> e <strong>jardim</strong> tropical.</li>
+    <li>Possui <strong>terraço</strong>, <strong>telhado em telha</strong> e <strong>vagas na garagem</strong>.</li>
+    <li> Código do imóvel: <strong>4B9V29</strong></li>
+  </ul>
+
+  <h3 style="color: #0077b6; border-left: 4px solid #0077b6; padding-left: 10px; margin-top: 40px;">Anúncios semelhantes</h3>
+
+  <div id="imoveis" style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px; justify-content: center;">
+    <div style="text-align: center;">
+      <img src="IMG/Casa 1/ilha.jpg" height="250px" width="400px" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <br>
+      <a href="ilha.html" style="display: block; margin-top: 10px; font-weight: bold; color: #0077b6; text-decoration: none;"> Ilha - Cairu, Bahia</a>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="IMG/Casa 1/cobertura.jpg" height="250px" width="400px" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <br>
+      <a href="cobertura.html" style="display: block; margin-top: 10px; font-weight: bold; color: #0077b6; text-decoration: none;"> Cobertura de luxo - Rio de Janeiro</a>
+    </div>
+  </div>
+
+</aside>
+
+<br>
+
+
+</body>
+</html>

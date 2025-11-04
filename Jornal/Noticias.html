@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias </title>
+    <link rel = "shortcut icon" href = IMG/logoInicial.jpg type = image/x-icon>
+
+
+      <Style>
+
+    
+    header {
+    background: #8FB9C9;
+    color: #333;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #007BFF; 
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:'Times New Roman';
+    }
+
+    /* Fundo da página */
+    body {
+        background-color: #D5EAF2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    min-height: 100vh;
+    padding-top:120px;
+    }
+
+     .card {
+      display: flex;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin: 30px 0;
+      padding: 20px;
+      width: 90%;
+      max-width: 900px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 0.7s ease forwards;
+    }
+  .bloco {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 30px auto;
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 900px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+  }
+
+  .bloco:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+
+  .bloco img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .bloco h3 a {
+    color: #0077b6;
+    border-left: 4px solid #0077b6;
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+  }
+
+  .bloco h3 a:hover {
+    color: #005f8f;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      border-radius: 12px;
+      width: 320px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .card-content {
+      margin-left: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-content h2 {
+      color: #e63946;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      margin: 6px 0;
+      line-height: 1.5;
+    }
+
+    .card-content a {
+      color: #e63946;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ h3 {
+  text-align: left;
+  width: 90%;
+  max-width: 900px;
+  
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #004E7C;
+  border-left: 5px solid #8FB9C9;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+    </Style>
+</head>
+<body>
+
+
+      <header>
+    <nav>
+   
+
+          <div class="logo"><img src="IMG/logoInicial.jpg" width="50" height="50" alt="Logo"></div>
+
+  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: left;  gap: 40px; padding: 20px;">
+
+ </div>
+      <ul class="nav-links">
+        <li><a href="Apresentacoes.html">Apresentações </a></li>
+            <li><a href="Noticias.html">Notícias</a></li>
+        <li><a href="TheNews.html">The News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <h1>ND Notícias </h1><br>
+   <h3>No ND Notícias, a informação vai além do fato. Acompanhe histórias que inspiram, inovações que transformam e temas que fazem parte do dia a dia .<br>
+     Aqui, tecnologia, comportamento e atualidade se encontram com responsabilidade, apuração e um olhar humano sobre o mundo.</h3>
+
+ 
+  <div class="card">
+  <img src="IMG/chip Layer .png" alt="Chip cerebral - Precision Neuroscience">
+  <div class="card-content">
+    <h2>Chip cerebral transforma pensamento em ação</h2>
+    <p><strong>Saúde e Tecnologia</strong></p>
+    <p>O chip Layer 7 Cortical Interface, criado pela Precision Neuroscience, capta sinais neurais e transforma pensamentos em comandos digitais sem causar danos ao cérebro.</p>
+    <a href="precision.html">Ler Mais →</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="IMG/Google-drive-transcricao-1-768x432.jpg.webp" alt="Google Drive">
+  <div class="card-content">
+    <h2>Google Drive ganha função de transcrição automática</h2>
+    <p><strong>Tecnologia</strong></p>
+    <p>O novo recurso do Google Drive transcreve vídeos automaticamente, mostrando o texto com marcação de tempo e facilitando o acesso e a busca por conteúdo.</p>
+    <a href="google-drive.html">Ler Mais →</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="IMG/neuralink.png" alt="Neuralink - Elon Musk">
+  <div class="card-content">
+    <h2>Neuralink conecta mente e computador</h2>
+    <p><strong>Inovação</strong></p>
+    <p>O chip cerebral de Elon Musk permite controlar computadores apenas com o pensamento. A tecnologia promete revolucionar a vida de pessoas com limitações motoras.</p>
+    <a href="neuralink.html">Ler Mais →</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="IMG/pele-eletronica.png" alt="Pele eletrônica vestível">
+  <div class="card-content">
+    <h2>Pele eletrônica monitora sinais vitais em tempo real</h2>
+    <p><strong>Ciência e Saúde</strong></p>
+    <p>Desenvolvida no Japão, a pele eletrônica capta batimentos cardíacos e impulsos elétricos, permitindo acompanhamento médico contínuo e remoto.</p>
+    <a href="pele-eletronica.html">Ler Mais →</a>
+  </div>
+</div>
+
+<div class="card">
+  <img src="IMG/bosch-carro.png" alt="Carro adaptado - Bosch">
+  <div class="card-content">
+    <h2>Carro adaptado devolve sonho a piloto paraplégico</h2>
+    <p><strong>Esporte e Superação</strong></p>
+    <p>A Bosch desenvolveu um carro controlado pelas mãos para o piloto Robert Wickens, que voltou às pistas após um grave acidente.</p>
+    <a href="bosch.html">Ler Mais →</a>
+  </div>
+</div>
+
+
+  
+
+</div>
+</body>
+</html>

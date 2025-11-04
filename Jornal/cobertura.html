@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cobertura</title>
+  <style>
+    body {
+      font-family: 'Times New Roman';
+  margin: 0;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  background-color: #f8feff;
+    }
+
+    header {
+      background: #fff;
+      padding: 10px 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-links { list-style: none; display: flex; }
+    .nav-links li { margin-left: 20px; }
+    .nav-links a { text-decoration: none; color: #333; font-weight: 600; }
+
+    /* Carrossel básico */
+    .carousel {
+      width: 900px;
+      max-width: 100%;
+      height: 520px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* Botões simples */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    
+    footer {
+      background-color: #8f8f8f;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      width: 100%;
+}
+footer p {
+    margin: 0;
+    
+}
+#rodape{
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.roda{
+    text-align: center;
+}
+
+ #imoveis{
+        display: flex;
+        top: 150px;
+        left: 150px;
+    }
+
+
+    a{
+text-decoration: none; 
+color: #000000;
+ font-family: 'Times New Roman';
+
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><img src="IMG/download (5).png" width="50" alt="Logo"></div>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="Compras.html">🛒</a></li>
+    </ul>
+  </header>
+<main>
+<div class="carousel">
+  <div class="slides" id="slides">
+  <div class="slide"><img src="IMG/casa 2/areadefora.jpg" alt="Área externa"></div>
+  <div class="slide"><img src="IMG/casa 2/banheiro.jpg" alt="Banheiro"></div>
+  <div class="slide"><img src="IMG/casa 2/cadeirasdepraia.jpg" alt="Cadeiras de praia"></div>
+  <div class="slide"><img src="IMG/casa 2/cozinha.jpg" alt="Cozinha"></div>
+  <div class="slide"><img src="IMG/casa 2/escada.jpg" alt="Escada"></div>
+  <div class="slide"><img src="IMG/casa 2/fora.jpg" alt="Fachada da casa"></div>
+  <div class="slide"><img src="IMG/casa 2/lavanderia.jpg" alt="Lavanderia"></div>
+  <div class="slide"><img src="IMG/casa 2/Property-41040000000007d9001e68792a08-131662913.jpg" alt="Vista geral da propriedade"></div>
+  <div class="slide"><img src="IMG/casa 2/quaro3.jpg" alt="Quarto 3"></div>
+  <div class="slide"><img src="IMG/casa 2/quarto.jpg" alt="Quarto principal"></div>
+  <div class="slide"><img src="IMG/casa 2/quarto2.jpg" alt="Quarto 2"></div>
+  <div class="slide"><img src="IMG/casa 2/quarto4.jpg" alt="Quarto 4"></div>
+  <div class="slide"><img src="IMG/casa 2/sala.jpg" alt="Sala principal"></div>
+  <div class="slide"><img src="IMG/casa 2/saladejantar.jpg" alt="Sala de jantar"></div>
+  <div class="slide"><img src="IMG/casa 2/salafoto2.jpg" alt="Outra vista da sala"></div>
+  <div class="slide"><img src="IMG/casa 2/salaN2.jpg" alt="Sala N2"></div>
+  <div class="slide"><img src="IMG/casa 2/salan2foto2.jpg" alt="Outra vista da sala N2"></div>
+
+
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+</main>
+  <script>
+    let currentIndex = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+
+    function showSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      showSlide(currentIndex);
+    }
+  </script>
+  
+
+  <br>
+  <br>
+  <br>
+
+<aside style="font-family: 'Poppins', sans-serif; color: #333; line-height: 1.6; max-width: 900px; margin: auto; background: #ffffff; padding: 40px; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+
+  <h1 style="font-family: 'Playfair Display', serif; color: #2c3e50; font-size: 32px; text-align: center; margin-bottom: 20px;">
+     Cobertura de luxo , Avenida Atlântica, Rio de Janeiro<br>R$35.000.000
+  </h1>
+
+  <h3 style="color: #0077b6; border-left: 4px solid #0077b6; padding-left: 10px; margin-top: 40px;">Descrição</h3>
+
+  <p>
+   Localizada no endereço mais icônico do Rio de Janeiro,<strong> ao lado do lendário Copacabana Palace,</strong> esta deslumbrante cobertura tríplex está situada no
+    sofisticado Edifício Chopin, um dos mais tradicionais e prestigiados da orla.
+    <br><br>
+  Com <strong>frontal e permanente para o mar,</strong>  que se estende do Leme ao Posto 6, a propriedade proporciona uma experiência única de contemplação da cidade,<strong> unindo elegância clássica,
+   amplitude e privacidade </strong> em um só lugar — um<strong> verdadeiro mirante suspenso sobre Copacabana, com 360° de vistas deslumbrantes.</strong> 
+
+  </p>
+
+  <h3 style="color: #0077b6; border-left: 4px solid #0077b6; padding-left: 10px; margin-top: 40px;">Detalhes</h3>
+
+  <ul style="list-style: none; padding: 0; margin-top: 15px;">
+    <li> Possui <strong>10 dormitórios espaçosos</strong>  ideais para famílias grandes ou quem busca amplitude.</li>
+    <li>Dispõe de <strong> 4 banheiros </strong> modernos e bem distribuídos.
+  <li> <strong>Metragem total:</strong>,  860 m².</li>
+    <li> <strong>Endereço</strong>,  Avenida Atlântica – Copacabana, Rio de Janeiro.</li>
+    <li >Código do imóvel: <strong> VA046COP.</strong></li>
+  </ul>
+
+  </p>
+
+  <h3 style="color: #0077b6; border-left: 4px solid #0077b6; padding-left: 10px; margin-top: 40px;">Estrutura e serviços</h3>
+
+  <ul style="list-style: none; padding: 0; margin-top: 15px;">
+  <li> <strong>Serviços internos:</strong> Sistema completo de segurança.</li>
+    <li> <strong>Serviços externos: </strong> Piscina, churrasqueira e acesso direto à beira-mar.</li>
+      <li> <strong>Tipos de estacionamento: </strong>Garagem privativa com vagas amplas.</li>
+        <li> <strong>Vista panorâmica:</strong>  Mar e montanha, oferecendo o melhor dos dois mundos.</li>
+
+
+  </ul>
+
+  <h3 style="color: #0077b6; border-left: 4px solid #0077b6; padding-left: 10px; margin-top: 40px;">Anúncios semelhantes</h3>
+
+  <div id="imoveis" style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px; justify-content: center;">
+    <div style="text-align: center;">
+      <img src="IMG/Casa 1/ilha.jpg" height="250px" width="400px" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <br>
+      <a href="ilha.html" style="display: block; margin-top: 10px; font-weight: bold; color: #0077b6; text-decoration: none;"> Ilha - Cairu, Bahia</a>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="IMG/Casa 1/Casadeprestígio.jpg" height="250px" width="400px" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <br>
+      <a href="PrimeriraCasa.html" style="display: block; margin-top: 10px; font-weight: bold; color: #0077b6; text-decoration: none;"> Casa de prestígio - São Paulo</a>
+    </div>
+  </div>
+
+</aside>
+
+<br>
+ <footer>
+
+ <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: left; color: #fff; gap: 40px; padding: 20px;">
+
+  <div style="max-width: 300px;">
+    <h3 style="color: #ffffff; margin-bottom: 10px;">Atendimento</h3>
+    <p style="color: #ffffff;">
+      Entre em contato com nossa equipe e descubra o imóvel dos seus sonhos.<br>
+      📧 contato@alphaimoveis.com.br<br>
+      📞 (11) 99999-9999<br>
+      Horário: Segunda a Sexta, das 9h às 18h.
+    </p>
+  </div>
+
+  <div style="max-width: 300px;">
+    <h3 style="color: #ffffff; margin-bottom: 10px;">Nossa Missão</h3>
+    <p style="color: #ffffff;">
+      Transformar o mercado imobiliário de luxo em uma experiência única e inspiradora.<br>
+      Oferecemos imóveis que refletem estilo, personalidade, conforto e exclusividade.
+    </p>
+  </div>
+
+  <div style="max-width: 300px;">
+    <h3 style="color: #ffffff; margin-bottom: 10px;">Valores</h3>
+    <p style="color: #ffffff;">
+      Transparência, confiança, inovação e comprometimento.<br>
+      Acreditamos que o verdadeiro luxo está nos detalhes e na experiência de cada cliente.
+    </p>
+  </div>
+
+</div>
+
+<hr>
+<br>
+      <p id="rodape">Alpha Imóveis</p>
+  <p  id="rodape">© 2025 Alpha Imóveis   — Excelência, sofisticação e confiança no mercado imobiliário de alto padrão.</p>
+  <br>
+   
+  <div class="roda">
+    <img src="IMG/face.png" width="40" height="40" alt="Logo" onclick="alert('facebook.com/alphaimoveis')">
+  <img src="IMG/instagram_logo_icon_267526 (1).png" width="40" height="40" alt="" onclick="alert('@alpha.imoveis')">
+  <img src="IMG/localizacao.png" width="40" height="40" alt="" onclick="alert('Rua Barreto Leme, 1540 – Centro, Campinas – SP, Brasil')">
+  <img src="IMG/telephone-symbol-button_icon-icons.com_73379.png" width="40" height="40" alt="" onclick="alert('(19) 4002-8922')">
+</div>
+</footer>
+
+</body>
+</html>
