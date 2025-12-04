@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apresentações — The News</title>
+  <link rel="shortcut icon" href="IMG/logoInicial.jpg" type="image/x-icon">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #D5EAF2;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 120px;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #8FB9C9;
+      color: #333;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo img {
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+
+    .logo img:hover {
+      transform: scale(1.1);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #004E7C;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #004E7C;
+      margin-bottom: 10px;
+      font-family: 'Georgia', serif;
+      border-left: 5px solid #8FB9C9;
+      padding-left: 10px;
+    }
+
+    h3 {
+      width: 90%;
+      max-width: 850px;
+      text-align: center;
+      margin: 10px 0 40px;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    section {
+      width: 85%;
+      max-width: 850px;
+      background: #ffffff;
+      padding: 25px 30px;
+      margin-bottom: 35px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    section h2 {
+      color: #004E7C;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      font-size: 1rem;
+      text-align: justify;
+    }
+
+    hr {
+      width: 70%;
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #004E7C, transparent);
+      margin: 25px 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="paginaInicial.html" class="logo">
+        <img src="IMG/logoInicial.jpg" width="50" height="50" alt="Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="Apresentacoes.html">Apresentações</a></li>
+        <li><a href="Noticias.html">Notícias</a></li>
+        <li><a href="TheNews.html">The News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Apresentações</h1>
+  <h3>Trabalhos desenvolvidos em grupo no Women in Action.</h3>
+
+  <section>
+    <h2>1. Autonomia – (Minha equipe: Ana Lívia, Júlia, Gabriela e Maria Karoline)</h2>
+    <p>Autonomia é a capacidade de uma pessoa tomar decisões e administrar a própria rotina com responsabilidade. Ser autônomo significa escolher, agir e aprender com consciência, evitando a dependência excessiva dos outros. Essa habilidade fortalece a confiança e o senso de responsabilidade, permitindo que cada um trace seu próprio caminho. Ter autonomia é acreditar em si mesmo e reconhecer que o crescimento vem das próprias escolhas e experiências.</p>
+  <br>
+    <h2>2. Lei da Suposição – (Emilyn)</h2>
+    <p>Pela apresentação eu entendi que a Lei da Suposição mostra como nossos pensamentos e sentimentos influenciam nossas atitudes. Quando a gente se imagina alcançando algo, o cérebro passa a acreditar que aquilo é possível. Isso ajuda a manter o foco e a motivação. Aprendi que pensar de forma positiva e visualizar o que queremos é o primeiro passo para conquistar nossos objetivos.</p>
+    <br>
+    <h2>3. Let's Talk – Resiliência, Rompendo Padrões e Respeito ao Próprio Tempo (Giovanna, Maria Aparecida e Maria Eduarda)</h2>
+    <p>Foi apresentado esses três temas que estão muito ligados ao crescimento pessoal. A resiliência ensina que é importante aprender com as dificuldades e não desistir diante dos problemas. Rompendo padrões mostra que devemos ter coragem de pensar diferente e aceitar nossos erros como parte do aprendizado. Já o respeito ao próprio tempo faz lembrar que cada pessoa tem seu ritmo e que tudo acontece no momento certo. Juntos, eles mostram que crescer exige paciência, coragem e autoconfiança.</p>
+    <br>
+    <h2>6. Rivalidade Feminina – (Isadora, Maria Heloísa, Thuany Leite, Maria Ramalho, Elisa Oliveira e Letícia Abreu)</h2>
+    <p>A rivalidade feminina é algo que prejudica as mulheres e impede a união entre elas. Muitas vezes a sociedade incentiva a comparação e a competição, mas isso só gera insegurança e afastamento. Aprendi que é muito melhor apoiar umas às outras, ter empatia e celebrar as conquistas em conjunto. A verdadeira força está na sororidade, ou seja, na união e no respeito entre mulheres.</p>
+    <br>
+    <h2>7. Livros “A Coragem de Não Agradar” e “Não Faça Tempestade em Copo d’Água” – (Alana, Ana Júlia, Amabile, Daniely e Beatriz)</h2>
+    <p>Os dois livros falam sobre autoconhecimento e atitudes diante da vida.  
+    O livro <i>A Coragem de Não Agradar</i> ensina que não devemos viver tentando satisfazer os outros, mas sim ter coragem de ser quem realmente somos. Ele fala sobre autorresponsabilidade e mostra que todos nós sentimos insegurança, mas podemos transformá-la em força para mudar.  
+    Já o livro <i>Não Faça Tempestade em Copo d’Água</i> mostra que é importante reagir com calma, compreender o comportamento das pessoas e ter humildade. Aprendi que ver o lado bom das situações e manter a serenidade nos ajuda a viver com mais leveza e equilíbrio.</p>
+  </section>
+
+  <br><br>
+
+  
+</body>
+</html>

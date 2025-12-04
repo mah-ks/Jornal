@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias </title>
+    <link rel="shortcut icon" href="IMG/logoInicial.jpg" type="image/x-icon">
+
+    <style>
+    header {
+      background: #8FB9C9;
+      color: #333;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0%;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .logo h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin-left: 20px;
+    }
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+      color: #007BFF;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #D5EAF2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding-top:120px;
+    }
+
+    .card {
+      display: flex;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin: 30px 0;
+      padding: 20px;
+      width: 90%;
+      max-width: 900px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 0.7s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      border-radius: 12px;
+      width: 320px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .card-content {
+      margin-left: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-content h2 {
+      color: #e63946;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      margin: 6px 0;
+      line-height: 1.5;
+    }
+
+    .card-content a {
+      color: #e63946;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+
+    h3 {
+      text-align: left;
+      width: 90%;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #004E7C;
+      border-left: 5px solid #8FB9C9;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    hr {
+      width: 70%;
+      border: none;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #004E7C, transparent);
+      margin: 30px 0;
+    }
+
+    footer {
+      background: #003049;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="paginaInicial.html">
+        <div class="logo">
+          <img src="IMG/logoInicial.jpg" width="50" height="50" alt="Logo">
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="Apresentacoes.html">Apresentações </a></li>
+        <li><a href="Noticias.html">Notícias</a></li>
+        <li><a href="TheNews.html">The News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <h1>ND Notícias </h1><br>
+   <h3>No ND Notícias, a informação vai além do fato. Acompanhe histórias que inspiram, inovações que transformam e temas que fazem parte do dia a dia .<br>
+     Aqui, tecnologia, comportamento e atualidade se encontram com responsabilidade, apuração e um olhar humano sobre o mundo.</h3>
+
+     <hr>
+
+  <div class="card">
+    <img src="IMG/chip Layer .png" alt="Chip cerebral - Precision Neuroscience">
+    <div class="card-content">
+      <h2>Chip cerebral transforma pensamento em ação</h2>
+      <p><strong>Saúde e Tecnologia</strong></p>
+      <p>O chip Layer 7 Cortical Interface, criado pela Precision Neuroscience, capta sinais neurais e transforma pensamentos em comandos digitais sem causar danos ao cérebro.</p>
+      <a href="precision.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/Google-drive-transcricao-1-768x432.jpg.webp" alt="Google Drive">
+    <div class="card-content">
+      <h2>Google Drive ganha função de transcrição automática</h2>
+      <p><strong>Tecnologia</strong></p>
+      <p>O novo recurso do Google Drive transcreve vídeos automaticamente, mostrando o texto com marcação de tempo e facilitando o acesso e a busca por conteúdo.</p>
+      <a href="google-drive.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/neuralink.png" alt="Neuralink - Elon Musk">
+    <div class="card-content">
+      <h2>Neuralink conecta mente e computador</h2>
+      <p><strong>Inovação</strong></p>
+      <p>O chip cerebral de Elon Musk permite controlar computadores apenas com o pensamento. A tecnologia promete revolucionar a vida de pessoas com limitações motoras.</p>
+      <a href="neuralink.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/pele-eletronica.png" alt="Pele eletrônica vestível">
+    <div class="card-content">
+      <h2>Pele eletrônica monitora sinais vitais em tempo real</h2>
+      <p><strong>Ciência e Saúde</strong></p>
+      <p>Desenvolvida no Japão, a pele eletrônica capta batimentos cardíacos e impulsos elétricos, permitindo acompanhamento médico contínuo e remoto.</p>
+      <a href="pele-eletronica.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/bosch-carro.png" alt="Carro adaptado - Bosch">
+    <div class="card-content">
+      <h2>Carro adaptado devolve sonho a piloto paraplégico</h2>
+      <p><strong>Esporte e Superação</strong></p>
+      <p>A Bosch desenvolveu um carro controlado pelas mãos para o piloto Robert Wickens, que voltou às pistas após um grave acidente.</p>
+      <a href="bosch.html">Ler Mais →</a>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <img src="IMG/kiro.png" alt="Kiro AWS">
+    <div class="card-content">
+      <h2>Kiro – IDE de Inteligência Artificial da AWS</h2>
+      <p><strong>Tecnologia e Programação</strong></p>
+      <p>O Kiro, lançado pela AWS, automatiza códigos, testes e documentação com IA, tornando o desenvolvimento de software mais rápido e preciso.</p>
+      <a href="kiro.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/Maps.png" alt="Google Maps Gemini">
+    <div class="card-content">
+      <h2>Google Maps com Gemini traz rotas mais inteligentes</h2>
+      <p><strong>Aplicativos e Inovação</strong></p>
+      <p>Com a integração da IA Gemini, o Google Maps agora oferece rotas otimizadas, recomendações e guias personalizados em tempo real.</p>
+      <a href="maps.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/Implante ocular.png" alt="Implante Ocular e Óculos Inteligente">
+    <div class="card-content">
+      <h2>Implante ocular devolve parte da visão a cegos</h2>
+      <p><strong>Saúde e Tecnologia</strong></p>
+      <p>Pesquisadores criaram um sistema com óculos inteligente e implante ocular que estimula o cérebro e devolve parte da visão.</p>
+      <a href="implante.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/dna.gif" alt="Filme armazenado em DNA">
+    <div class="card-content">
+      <h2>Filmes agora podem ser guardados em DNA</h2>
+      <p><strong>Ciência e Futuro</strong></p>
+      <p>Pesquisadores descobriram como armazenar fotos e vídeos dentro de moléculas de DNA, prometendo guardar dados por milhares de anos.</p>
+      <a href="dna.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/O astronauta que imprimiu uma ferramenta no espaço.png" alt="Impressão 3D no espaço">
+    <div class="card-content">
+      <h2>NASA imprime ferramentas em 3D no espaço</h2>
+      <p><strong>Exploração Espacial</strong></p>
+      <p>Na Estação Espacial Internacional, astronautas imprimiram ferramentas em 3D, reduzindo a dependência de envios da Terra.</p>
+      <a href="impressao3d.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/lente de contato que grava.png" alt="Lente de contato que grava vídeos">
+    <div class="card-content">
+      <h2>Lente de contato que grava vídeos</h2>
+      <p><strong>Tecnologia e Privacidade</strong></p>
+      <p>Lentes inteligentes com microcâmeras permitem gravar o mundo a partir da visão do usuário, mas levantam debates sobre privacidade.</p>
+      <a href="lente-video.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/AgenteHQ.png" alt="Interface Agente HQ - GitHub">
+    <div class="card-content">
+      <h2>Agente HQ — A nova central de IA do GitHub</h2>
+      <p><strong>Inovação Digital</strong></p>
+      <p>O Agente HQ do GitHub integra vários agentes de IA em um só lugar, unindo ferramentas para gerar código, analisar dados e otimizar projetos.</p>
+      <a href="multi-ia.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/Minicérebros humanos.png" alt="Minicérebros treinando IA">
+    <div class="card-content">
+      <h2>Minicérebros humanos treinam inteligência artificial</h2>
+      <p><strong>Ciência e Ética</strong></p>
+      <p>Pesquisadores usam organoides cerebrais para treinar IAs de forma mais parecida com o cérebro humano.</p>
+      <a href="minicerebros.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/impressora 3D.png" alt="Criação de órgãos 3D">
+    <div class="card-content">
+      <h2>UFMG cria órgãos com impressora 3D</h2>
+      <p><strong>Saúde e Pesquisa</strong></p>
+      <p>A universidade desenvolve órgãos artificiais com bioimpressão 3D, visando reduzir filas de transplantes.</p>
+      <a href="orgaos3d.html">Ler Mais →</a>
+    </div>
+  </div>
+  
+<div class="card">
+  <div class="card-images" style="text-align: center;">
+    <img src="IMG/Rodocodo.png" alt="Rodocodo" style="width: 70%; border-radius: 12px; object-fit: cover; margin-bottom: 10px;">
+    <img src="IMG/ligtbot.png" alt="Lightbot" style="width: 70%; border-radius: 12px; object-fit: cover;">
+  </div>
+  <div class="card-content" >
+    <h2>Jogos de lógica ensinam programação brincando</h2>
+    <p><strong>Educação e Games</strong></p>
+    <p>Lightbot e Rodocodo ensinam fundamentos de programação por meio de desafios interativos e divertidos.</p>
+    <a href="jogos.html">Ler Mais →</a>
+  </div>
+</div>
+
+
+
+  <div class="card">
+    <img src="IMG/oculos even g1 smart .png" alt="Óculos Even G1 Smart">
+    <div class="card-content">
+      <h2>Óculos Even G1 Smart monitora sua saúde</h2>
+      <p><strong>Wearables e Inovação</strong></p>
+      <p>O óculos inteligente brasileiro mede batimentos, oxigenação e fadiga ocular, além de conectar-se via Bluetooth.</p>
+      <a href="oculos.html">Ler Mais →</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ND Notícias — Informação com propósito e credibilidade.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The News </title>
+  <link rel="shortcut icon" href="IMG/logoInicial.jpg" type="image/x-icon">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #D5EAF2;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 120px;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #8FB9C9;
+      color: #333;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #004E7C;
+    }
+
+
+    h1 {
+      color: #002b5b;
+      margin: 30px 0 10px 0;
+      text-align: left;
+      font-size: 2rem;
+      font-weight: 700;
+      border-left: 6px solid #003049;
+      padding-left: 10px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.8;
+      text-align: justify;
+      max-width: 900px;
+    }
+
+    .slider {
+  width: 60%;              /* diminui a largura total do bloco */
+  max-width: 950px;        /* mantém equilíbrio em telas grandes */
+  height: 400px;           /* reduz altura, deixando mais compacto */
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+  background: #ccc;        /* fundo mais neutro e menos aparente */
+  margin-bottom: 30px;     /* espaço abaixo */
+}
+
+    .slides {
+      display: flex;
+      width: 400%;
+      height: 100%;
+      animation: slide 20s infinite;
+    }
+
+    .slides a {
+      flex: 0 0 100%;
+      position: relative;
+    }
+
+  .slides img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: transform 0.5s ease;
+}
+
+
+    .slides a:hover img {
+      transform: scale(1.02);
+      filter: brightness(90%);
+    }
+
+    .headline {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 5px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      max-width: 80%;
+    }
+
+    @keyframes slide {
+      0%, 20% { transform: translateX(0); }
+      25%, 45% { transform: translateX(-100%); }
+      50%, 70% { transform: translateX(-200%); }
+      75%, 95% { transform: translateX(-300%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* ===== Seção de destaques ===== */
+    .news-section {
+      margin-top: 40px;
+      width: 90%;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .news-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-card .content {
+      padding: 15px;
+    }
+
+    .news-card h3 {
+      color: #003049;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .news-card p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #003049;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+      font-size: 0.9rem;
+      width: 100%;
+
+    }
+
+    @media (max-width: 768px) {
+      .slider { height: 280px; }
+      .headline { font-size: 1rem; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="paginaInicial.html">
+        <img src="IMG/logoInicial.jpg" width="55" height="55" alt="Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="Apresentacoes.html">Apresentações</a></li>
+        <li><a href="Noticias.html">Notícias</a></li>
+        <li><a href="TheNews.html">The News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="slider">
+    <div class="slides">
+      <a href="neuralink.html">
+        <img src="IMG/neuralink.png" alt="Neuralink">
+        <div class="headline">Neuralink conecta mente e computador</div>
+      </a>
+
+      <a href="bosch.html">
+        <img src="IMG/bosch-carro.png" alt="Bosch carro adaptado">
+        <div class="headline">Carro adaptado devolve sonho a piloto paraplégico</div>
+      </a>
+
+      <a href="anel.html">
+        <img src="./IMG/Anéis são os novos itens de luxo.avif" alt="Anéis de luxo">
+        <div class="headline">Anéis são os novos itens de luxo do momento</div>
+      </a>
+
+      <a href="pele-eletronica.html">
+        <img src="./IMG/pele-eletronica.png" alt="Pele eletrônica">
+        <div class="headline">Pele eletrônica monitora sinais vitais em tempo real</div>
+      </a>
+    </div>
+  </div>
+
+  <h1>Sobre a ND Notícias</h1>
+  <p>
+    A <strong>ND Notícias</strong> é um espaço dedicado a levar informação com propósito, clareza e relevância.
+    Nosso foco é conectar o leitor aos principais acontecimentos que impactam o dia a dia, com um olhar humano sobre tecnologia,
+    ciência, comportamento e sociedade. <br><br>
+    Mais do que noticiar fatos, buscamos contar histórias que inspiram — mostrando o avanço da inovação, o poder das
+    ideias e as transformações que movem o mundo. Cada matéria é feita com apuração, responsabilidade e compromisso com a verdade,
+    valorizando o conhecimento e o pensamento crítico.
+  </p>
+
+  <section class="news-section">
+    <div class="news-card">
+      <img src="./IMG/Google-drive-transcricao-1-768x432.jpg.webp" alt="Google Drive">
+      <div class="content">
+        <h3>Google Drive agora transcreve vídeos automaticamente</h3>
+        <p>Nova função facilita a busca e melhora a acessibilidade para estudantes e profissionais. <a href="google-drive.html">Leia mais →</a></p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="./IMG/A lente que enxerga antes do médico.png" alt="Lente Inteligente">
+      <div class="content">
+        <h3>Lente inteligente detecta doenças antes do médico</h3>
+        <p>Inovação monitora os olhos em tempo real e dispensa o uso de chips ou baterias. <a href="lente.html">Leia mais →</a></p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="./IMG/A OpenAI é uma ONG.png" alt="OpenAI">
+      <div class="content">
+        <h3>Afinal, a OpenAI é uma ONG?</h3>
+        <p>Um olhar sobre o modelo de negócios da empresa e seu impacto ético no futuro da IA. <a href="openai.html">Leia mais →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 ND Notícias — Informação com propósito e credibilidade.
+  </footer>
+
+</body>
+</html>
